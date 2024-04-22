@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		html { 
+			font-size: 14px;
+			font-family: 'Open Sans', sans-serif; 
+		}
+
+		h1 { 
+			font-size: 60px;
+			text-align: center; 
+		}
+		
+		html { 
+			background-color: #00539F; 
+		}
+		
+		body { 
+			width: 600px;
+			margin: 0 auto;
+			background-color: #00a2ff91;
+			padding: 0 20px 20px 20px;
+			border: 5px solid black; 
+		}
+		
+		h1 { 
+			margin: 0;
+			padding: 20px 0;
+			color: #00539F;
+			text-shadow: 3px 3px 1px black; 
+		}
+		.campo input [type="text"],
+		.campo input [type="email"],
+		.campo input [type="url"],
+		
+		.botao { 
+			font-size: 1.5em;
+			background: rgb(15, 7, 92);
+			border: 0;
+			margin-bottom: 1em;
+			color: #FFF;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+		.botao: hover {
+			background: rgb(7, 57, 66);
+			box-shadow: inset 2px 2px 2px rgba(0,0,0,0,2);
+			text-shadow: none;
+		}
+		.botao, select, label.checkbox {
+			cursor: grabbing;
+			transition: 0.5s;
+		}
+	
+	</style>
+	<title> Taverna Estaciano </title>
+</head>

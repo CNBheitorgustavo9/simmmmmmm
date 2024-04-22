@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link href="css_formu.css" rel="stylesheet">
+		<title> Taverna Estaciano </title>
+	</head>
+	<h1>Formulário</h1>
+	<form action="#" method="post" oninput="total.value = (noites.valueAsNumber * 250) + ((hospede.valueAsNumber - 1) * 50)">
+	<fieldset>
+		<div class="campo">
+			<label>Nome:</label>
+			<input type="text" id="nome" name="nome" placeholder="Digite o nome..." style="width: 20em" required></br>
+		</div><br>
+		<div class="campo">
+			<label class="checkbox">
+			<input type="radio" name="sexo" value="masculino"> Masculino
+			</label>
+			<label class="checkbox">
+			<input type="radio" name="sexo" value="feminino"> Feminino
+			</label></br><br>
+		</div>
+		<div class="campo">
+			<label>Email:</label>
+			<input type="email" id="email" name="email" required></br><br></div>
+		<div class="campo">
+		<label>Repita o email:</label>
+		<input type="email" id="email_repeti" name="email_repeti" required oninput="check(this)"></br><br> </div>
+		<div class="campo">
+			<label>Data de chegada:</label>
+			<input type="date" id="dt_chegada" name="dt_chegada" required></br><br>
+		</div>
+		<div class="campo">
+			<label>Numero de noites (R$250,00 por noite):</label>
+			<input type="number" id="noites" name="noites" value="1" min="1" max="30" required></br><br></div>
+		<div class="campo">
+		<label>Numero de hospedes (R$50,00 adicional por noite):</label>
+		<input type="number" id="hospede" name="hospede" value="1" min="1" max="4" required></br><br>
+		</div>
+			<fieldset class="grupo">
+				<div class="campo">
+					<label>Total estimado:</label>
+					R$<output id="total" name="total">250</output>.00
+					<br>
+				</div>
+			</fieldset><br>
+		<div class="campo">
+			<label>Mensagem</label>
+			<textarea name="message" style="width: 40em" placeholder="Algum comentario extra?"></textarea></br><br>
+		</div>
+		<div class="campo">
+			<label>Codigo promocional:</label>
+			<input type="text" id="promo" name="promo" pattern="[A-Za-z0-9]{6}"title="Codigo promocional consiste em 6 caracteres alphanumericos."></br><br> </div>
+		<div class="campo">
+			<label>Newsletter</label>
+			<label class="checkbox">
+			<input type="checkbox" name="newsletter" value="1"> Gostaria de receber a nossa Newsletter
+			</label></br><br>
+		</div>
+		<button class="botao submit" type="submit" name="submit">Requerer reserva</button>
+	</fieldset>
+	</form>
+</html>
